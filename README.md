@@ -1,1 +1,1 @@
-This repo will track the updating of the JOSHU project.
+This repo will track the progress of the JOSHU project.
