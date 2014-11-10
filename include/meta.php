@@ -1,0 +1,3 @@
+		<meta name="keywords" content="Japanese,kanji,nihongo,travel to japan,japanese language,nihon,study Japanese,Japanese lessons,learn Japanese,Japan news,Japan images,japanese culture,japanese vocabulary,japanese language school">
+		<meta name="description" content="JOSHU is a portal for those who study Japanese language (Nihongo) and writing (Kanji)">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">

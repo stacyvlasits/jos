@@ -1,0 +1,438 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<HTML lang="ja">
+
+<html>
+
+<!-- Copyright 2009 Travis Schiller
+     Created under the direction of Naoko Suito, Ph.D.
+     Spring 2009 -->
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<title>JOSHU - Similar-Looking Kanji Quiz</title>
+
+<SCRIPT language="JavaScript">
+
+<!-- Begin
+function roll_over(img_name, img_src)
+	{
+	document[img_name].src = img_src;
+	}
+
+// End -->
+
+</SCRIPT>
+
+<style type="text/css">
+
+#body {
+	padding: 0;
+	margin: -8px; 
+	background-color: #003366;
+	background-image: url(radicalspics/vertical.png);
+	background-repeat: repeat;
+	font: 80% 'lucida sans', 'lucida sans unicode', 'lucida grande', 	'trebuchet ms', helvetica, arial, sans-serif;
+	}
+
+#wrapper {
+	width: 760px;
+	margin: -8px auto;
+	background-color: #ffffff;
+	border: 1px solid #000033;
+	}
+
+a {
+	text-decoration: none;
+	}
+
+a:hover, a:focus, a:active {
+	color: #000000;
+	text-decoration: none
+	}
+
+a:focus, a:active {
+	color: #ffffff;
+	}
+
+ul#jumplinks {
+	display: block;
+	padding: 3px 0;
+	margin: 0;
+	width: 760px;
+	height: 1.4em;
+	background-color: #cc5500;
+	}
+
+ul#jumplinks li {
+	display: inline;
+	float: right;
+	}
+
+ul#jumplinks li a {
+	padding: 0 10px;
+	text-decoration: none;
+	margin: 0 5px;
+	color: #ffffff;
+	}
+
+ul#jumplinks li a:hover, #header h1 a:focus, #header h1 a:active{
+	color: #000000;
+	}
+
+#header {
+	width: 760px;
+	height: 55px;
+	background-color: #000033;
+	border-top: 1px solid #000033;
+	}
+
+#header h1 {
+	padding: 5px;
+	margin: 5px;
+	}
+
+#header h1 a {
+	display: block
+	width: 740 px;
+	height: 110px;
+	padding: 10px;
+	color: #eecc11;
+	font-family: 'trebuchet ms', helvetica, arial, sans-serif;
+	text-decoration: none;
+	}
+
+#header h1 a:hover, #header h1 a:focus, #header h1 a:active {
+	color: #ffffff;
+	background: transparent;
+	text-decoration: none;
+	}
+
+#header h1 a:focus, #header h1 a:active {
+	text-decoration: none;
+	}
+
+#content {
+	float: left;
+	display: inline;
+	width: 740px;
+	margin: 7px 20px;
+	}
+#content a {
+	color: #cc5500;
+	text-decoration: underline;
+	}
+
+#content a:focus, #content a:hover {
+	text-decoration: none;
+	}
+
+p#navbar {
+	font-size: 0.8em;
+	float: right;
+	margin: -3px -25px;
+	}
+
+p#foottitle {
+	color: #000000;
+	font-size: 0.8em;
+	}
+
+h2 {
+	color: #6b0018;
+	text-align: center;
+	padding-top: 5px;
+	}
+
+h3 {
+	color: #6b0018;
+	}
+
+ul {
+	list-style-type: square;
+	padding-left: 40px;
+	margin-left: -5px;
+	}
+
+img.floatLeft {
+	float: left;
+	margin-right: 20px;
+	}
+
+img.floatRight {
+	float: right;
+	margin-right: 60px;
+	}
+
+blockquote {
+	margin-left 20px;
+	padding-left: 15px;
+	border-left: 2px dotted #386088;
+	}
+
+blockquote cite {
+	display: block;
+	text-align: right;
+	font-weight: bold;
+	color: #386088;
+	}
+
+#footer {
+	clear: both;
+	width: 740px;
+	padding: 10px;
+	border-top: 1px solid #000033;
+	background-color: #cc5500;
+	text-align: center;
+	font-size: 0.9m;
+	}
+
+#footer p {
+	margin: -2px; 
+	padding-top: -3px;
+	padding-bottom: 6px;
+	color: #ffffff;
+	}
+
+ul#footnav {
+	margin: 0; 
+	padding: 0; 
+	}
+
+ul#footnav li {
+	display: inline;
+	font-size: 0.7em;
+	}
+
+ul#footnav li a {
+	padding : 0 5px;
+	color : #ffffff;
+	}
+
+#footer a {
+	padding: 0;
+	color: #dddddd;
+	text-decoration: none;
+	}
+
+#footer a:hover, #footer a:focus, #footer a:active {
+	color: #000000;
+	text-decoration: none; 
+	}
+
+ul#footnav li a:hover, ul#footnav li a:focus, ul#footnav li a:active {
+	color: #000000;
+	text-decoration: none;
+	}
+
+
+#copyright{
+	color: #ffffff;
+	text-align: center;
+	font-size: 0.6em;
+	}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="body">
+
+<div id="wrapper">
+
+<ul id="jumplinks">
+<li><a href="https://courses.utexas.edu/webapps/portal/frameset.jsp">Blackboard</a></li>
+<li><a href="https://utdirect.utexas.edu/utdirect/index.WBX">UT Direct</a></li>
+<li><a href="http://www.utexas.edu/">University of Texas</a></li>
+</ul>
+
+<div id="header">
+
+<h1><a href="radicals2.html">Kanji Study</a></h1>
+
+</div>   <!--Ends Div Header-->
+
+<div id="content">
+
+<br/>
+
+<img src="radicalspics/joshulogo.gif" class="floatLeft">
+
+<h2>Similar-Looking Kanji Quiz</h2>
+
+<br/>
+
+<p>This casual quiz will test your ability to discern between the many, many pairs and groups of kanji that look very similar to each other.  For each group, examine closely and decide which kanji represents the meaning given.  For bonus points, try to identify the other kanji in each group.</p>
+
+<p>Each group gets more difficult as you progress.</p>
+<br/><br/>
+<p>White</p>
+<p>
+<img src="simkanjipics/eye.jpg">
+<img src="simkanjipics/day.jpg">
+<img src="simkanjipics/white.jpg">
+<img src="simkanjipics/onehundred.jpg">
+<img src="simkanjipics/oneself.jpg">
+
+<a onmouseover="roll_over('white', 'simkanjipics/white.jpg')" 
+onmouseout="roll_over('white', 'simkanjipics/bluebox.jpg')"> <img "name="white" src="simkanjipics/bluebox.jpg" class="floatRight"></a>
+
+</p>
+<br/>
+<p>Enter</p>
+<p>
+<img src="simkanjipics/person.jpg">
+<img src="simkanjipics/eight.jpg">
+<img src="simkanjipics/enter.jpg">
+
+<a onmouseover="roll_over('enter', 'simkanjipics/enter.jpg')" 
+onmouseout="roll_over('enter', 'simkanjipics/bluebox.jpg')"> <img "name="enter" src="simkanjipics/bluebox.jpg" class="floatRight"></a>
+
+</p>
+<br/>
+<p>Shellfish</p>
+<p>
+<img src="simkanjipics/buy.jpg">
+<img src="simkanjipics/shellfish.jpg">
+
+<a onmouseover="roll_over('shellfish', 'simkanjipics/shellfish.jpg')" 
+onmouseout="roll_over('shellfish', 'simkanjipics/bluebox.jpg')"> <img "name="shellfish" src="simkanjipics/bluebox.jpg" class="floatRight"></a>
+
+</p>
+<br/>
+<p>Taste</p>
+<p>
+<img src="simkanjipics/harmony.jpg">
+<img src="simkanjipics/taste.jpg">
+
+<a onmouseover="roll_over('taste', 'simkanjipics/taste.jpg')" 
+onmouseout="roll_over('taste', 'simkanjipics/bluebox.jpg')"> <img "name="taste" src="simkanjipics/bluebox.jpg" class="floatRight"></a>
+
+</p>
+<br/>
+<p>Own</p>
+<p>
+<img src="simkanjipics/temple.jpg">
+<img src="simkanjipics/own.jpg">
+<img src="simkanjipics/time.jpg">
+<img src="simkanjipics/wait.jpg">
+
+<a onmouseover="roll_over('own', 'simkanjipics/own.jpg')" 
+onmouseout="roll_over('own', 'simkanjipics/bluebox.jpg')"> <img "name="own" src="simkanjipics/bluebox.jpg" class="floatRight"></a>
+
+</p>
+<br/>
+<p>Public</p>
+<p>
+<img src="simkanjipics/meet.jpg">
+<img src="simkanjipics/public.jpg">
+
+<a onmouseover="roll_over('public', 'simkanjipics/public.jpg')" 
+onmouseout="roll_over('public', 'simkanjipics/bluebox.jpg')"> <img "name="public" src="simkanjipics/bluebox.jpg" class="floatRight"></a>
+
+</p>
+<br/>
+<p>Thing</p>
+<p>
+<img src="simkanjipics/kaku.jpg">
+<img src="simkanjipics/koto.jpg">
+
+<a onmouseover="roll_over('koto', 'simkanjipics/koto.jpg')" 
+onmouseout="roll_over('koto', 'simkanjipics/bluebox.jpg')"> <img "name="koto" src="simkanjipics/bluebox.jpg" class="floatRight"></a>
+
+</p>
+<br/>
+<p>Fall</p>
+<p>
+<img src="simkanjipics/fall.jpg">
+<img src="simkanjipics/i.jpg">
+
+<a onmouseover="roll_over('fall', 'simkanjipics/fall.jpg')" 
+onmouseout="roll_over('fall', 'simkanjipics/bluebox.jpg')"> <img "name="fall" src="simkanjipics/bluebox.jpg" class="floatRight"></a>
+
+</p>
+<br/>
+<p>Half</p>
+<p>
+<img src="simkanjipics/han.jpg">
+<img src="simkanjipics/hei.jpg">
+
+<a onmouseover="roll_over('han', 'simkanjipics/han.jpg')" 
+onmouseout="roll_over('han', 'simkanjipics/bluebox.jpg')"> <img "name="han" src="simkanjipics/bluebox.jpg" class="floatRight"></a>
+
+</p>
+<br/>
+<p>Cow</p>
+<p>
+<img src="simkanjipics/go.jpg">
+<img src="simkanjipics/gyuu.jpg">
+
+<a onmouseover="roll_over('gyuu', 'simkanjipics/gyuu.jpg')" 
+onmouseout="roll_over('gyuu', 'simkanjipics/bluebox.jpg')"> <img "name="gyuu" src="simkanjipics/bluebox.jpg" class="floatRight"></a>
+
+</p>
+<br/>
+<p>Crossing</p>
+<p>
+<img src="simkanjipics/dad.jpg">
+<img src="simkanjipics/crossing.jpg">
+<img src="simkanjipics/school.jpg">
+
+<a onmouseover="roll_over('crossing', 'simkanjipics/crossing.jpg')" 
+onmouseout="roll_over('crossing', 'simkanjipics/bluebox.jpg')"> <img "name="crossing" src="simkanjipics/bluebox.jpg" class="floatRight"></a>
+
+</p>
+<br/>
+<p>Put, Place</p>
+<p>
+<img src="simkanjipics/put.jpg">
+<img src="simkanjipics/fix.jpg">
+
+<a onmouseover="roll_over('put', 'simkanjipics/put.jpg')" 
+onmouseout="roll_over('put', 'simkanjipics/bluebox.jpg')"> <img "name="put" src="simkanjipics/bluebox.jpg" class="floatRight"></a>
+
+</p>
+<br/>
+<a href="radicals5.html">Return to Kanji Radicals page</a>
+</div>   <!--Ends Div Content-->
+
+
+<div id="footer">
+
+<p id="foottitle">JOSHU Links</p>
+
+<ul id="footnav">
+<li><a href="http://www.laits.utexas.edu/japanese/joshu/index.php">Home</a></li>
+<li><a href="http://www.laits.utexas.edu/japanese/joshu/basics.php">Learn the Basics</a></li>
+<li><a href="http://www.laits.utexas.edu/japanese/joshu/vocabulary.php">Vocabulary</a></li>
+<li><a href="http://www.laits.utexas.edu/japanese/joshu/kanakanji.php">Kana/Kanji</a></li>
+<li><a href="http://www.laits.utexas.edu/japanese/joshu/grammar.php">Grammar</a></li>
+<li><a href="http://www.laits.utexas.edu/japanese/joshu/counters.php">Counters</a></li>
+<li><a href="http://www.laits.utexas.edu/japanese/joshu/reading.php">Reading</a></li>
+<li><a href="http://www.laits.utexas.edu/japanese/joshu/video.php">Video</a></li>
+<li><a href="http://www.laits.utexas.edu/japanese/joshu/culture.php">Culture</a></li>
+<li><a href="http://www.laits.utexas.edu/japanese/joshu/links.php">Links</a></li>
+<ul>
+
+</div>   <!--Ends Div Footer-->
+</div>   <!--Ends Div Wrapper-->
+
+<div id="copyright">
+<br/>
+<p>2009 Travis Schiller and Naoko Suito, Ph.D. &nbsp;All Rights Reserved.</p>
+
+</div>   <!--Ends Div Copyright-->
+&nbsp<br/>
+&nbsp<br/>
+&nbsp<br/>
+&nbsp<br/>
+&nbsp<br/>
+</div>   <!--Ends Div Body-->
+
+
+</body>
+
+</html>

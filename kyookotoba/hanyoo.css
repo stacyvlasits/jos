@@ -1,0 +1,480 @@
+/**
+@import url(./debug.css);
+
+/**********************************
+**                               **
+**  全ページ共通の汎用スタイル。 **
+**              2004/06/29日版   **
+**                               **
+**********************************/
+
+
+/******************
+**  各要素汎用。 **
+******************/
+
+
+ins {}
+del {}
+
+
+/* インライン要素。*/
+
+
+a {}
+abbr {}
+acronym {}
+b {}
+bdo {}
+big {}
+br {}
+button {}
+cite {}
+code {}
+dfn {}
+em
+{
+	font-style: normal;
+	font-weight: bold;
+}
+i {}
+img {}
+input {}
+kbd {}
+label {}
+map {}
+	area {}
+object {}
+	param {}
+q {}
+samp {}
+script {}
+select {}
+	option {}
+	optgroup {}
+small {}
+span {}
+strong {}
+
+sub
+{
+	vertical-align: 0;
+}
+sup
+{
+	vertical-align: 0.6em;
+}
+
+textarea {}
+tt {}
+var {}
+
+
+/* ブロック要素。*/
+
+
+address
+{
+	margin: 1.2em 0;
+	padding: 0;
+	font-style: normal;
+}
+
+blockquote {}
+
+div
+{
+	margin 0;
+	padding: 0;
+}
+
+fieldset {}
+	legend {}
+form {}
+
+hr
+{
+	display: block;
+	margin: 1.2em 0;
+}
+
+noscript {}
+
+p
+{
+	margin: 1.2em 0;
+	text-indent: 3ex;
+}
+
+pre {}
+
+
+/*  hn  */
+h1
+{
+	font-size: 200%;
+	font-weight: bold;
+	margin: 0.6em 0;		/* 1.2em / 200% = 0.6 */
+	padding: 0;
+	text-align: center;
+}
+h2
+{
+	font-size: 144%;		/* 120% ^ 2     */
+	font-weight: bold;
+	margin: 0.833em 0;		/* 1.2em / 144% = 0.833... */
+/*	padding: 4px 12px;*/
+	padding: 0;
+}
+h3
+{
+	font-size: 120%;
+	font-weight: bold;
+	margin: 1em 0;			/* 1.2em / 120% = 1 */
+/*	padding: 4px 12px;*/
+	padding: 0;
+}
+h4, h5, h6
+{
+	font-size: 100%;
+	font-weight: bold;
+	margin: 1.2em 0;
+/*	padding: 2px 6px;*/
+	padding: 0;
+}
+
+
+/*  dl, dt, dd, ol, ul, li  */
+dl
+{
+/*	margin: 1.6em 0;/* dtにpaddingが足したあるんでバランス取って1.2+α。*/
+	margin: 1.2em 0;
+	padding: 0;
+}
+dt
+{
+	margin: 0;
+	padding: 3px 6px;	/* 下線のため。ないなら0でも良い。*/
+	font-weight: bold;
+	border-bottom: 1px solid #bfbfbf;
+}
+dd
+{
+	margin: 1.2em 0 1.6em 40px;
+	padding: 0;
+}
+
+ol, ul
+{
+	margin: 1.2em 0;
+	padding: 0 0 0 40px;
+}
+li
+{
+	margin 0;
+	padding: 0;
+}
+
+
+/*  table, caption, col(group), thead, tfoot, tbody, tr, th, td  */
+table
+{
+	margin: 0 0 1.8em 0;
+	padding: 0;
+	border-width: 0;
+	border-style: solid;
+	border-color: #ffffff #7f7f7f #7f7f7f #ffffff;
+}
+	/* table～caption間のmarginは各ブラウザで扱いがばらばらやので、
+	   現時点でここにmarginを置くのは正負の値問わず危険。*/
+caption
+{
+	margin: 1.2em 0 0 0;
+	padding: 0.6em 0 0 0;	/* marginの代わり。良うない方法。*/
+	caption-side: top;
+	font-size: 120%;
+	font-weight: bold;
+}
+	col {}
+	colgroup {}
+	thead {}
+	tfoot {}
+	tbody {}
+		tr {}
+		th, td
+		{
+			padding: 3px 9px;
+			border-width: 0;
+			border-style: solid;
+			border-color: #afafaf #ffffff #ffffff #afafaf;
+		}
+		th
+		{
+			font-weight: bold;
+		}
+		td {}
+		td.gaitooNashi
+		{
+			color: #7f7f7f;
+			text-align: center;
+		}
+
+
+/************************
+**  特定の要素下汎用。 **
+************************/
+
+
+li dl, li ol, li ul,
+dl dl, dl ol, dl ul
+{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+caption small
+{
+	font-size: 75%;
+}
+
+
+/************************
+**  特定の要素専用ID。 **
+**  ID名順。           **
+************************/
+
+
+/*  ページ構造に関わるもの。*/
+
+
+p#dainoShita	/* h1の直下。長いものはmaegakiにすること。*/
+{
+	margin: -1.2em 0 1.6em 0;
+	font-size: 90%;
+	text-align: center;
+}
+
+ul#goannaiShita
+{
+	margin: 1.6em 0 2.4em 0;
+	text-align: right;
+	list-style-type: none;
+}
+ul#goannaiShita li
+{
+	margin-bottom: 0.6em;
+}
+ul#goannaiShita li ul
+{
+	margin: 0;
+	/* 以下2行IE対策。*/
+	display: inline;
+	list-style-type: none;
+}
+ul#goannaiShita li ul li
+{
+	padding-right: 0;
+	display: inline;
+}
+
+ul#kooshimbi
+{
+	font-size: 80%;
+	line-height: 1.125em;
+	text-align: right;
+	list-style-type: none;
+}
+ul#kooshimbi ul
+{
+	list-style-type: none;
+}
+
+div#maegaki, div#atogaki
+{
+	margin: 1.6em 0;
+}
+
+div#mokuzhi
+{
+	margin: 1.2em 0 2.0em 0;
+	padding: 0 0 0 24px;
+}
+div#mokuzhi h2
+{
+	margin-left: -24px;
+}
+
+/****************************
+**  特定の要素専用クラス。 **
+****************************/
+
+
+/*  ページ構造に関わるもの。*/
+
+
+ul.goannai
+{
+	margin: 0 0 1.6em 0;
+	font-size: 85%;
+	text-align: right;
+	list-style-type: none;
+}
+ul.goannai li
+{
+	display: inline;
+}
+ul.goannai li form
+{
+	display: inline;
+	position: absolute;
+	left: 12px;
+}
+ul.goannai li form fieldset
+{
+	display: inline;
+	border: none;
+}
+
+div.setsu	/* h2に対応。*/
+{
+	margin: 1.2em 0 3.6em 0;
+	padding: 0 0 0 24px;
+}
+div.setsu h2
+{
+	margin-left: -24px;
+}
+
+div.koo	/* h3に対応。*/
+{
+	margin: 1.8em 0 2.4em 0;
+}
+div.koo h3 {}
+
+ul.tobu
+{
+	list-style-type: none;
+	text-align: right;
+}
+
+div.dummy	/* ページ下の案内用リンクにmargin-bottomを */
+{			/* 発生させるためだけのダミーブロック。*/
+	text-align: right;
+}
+div.dummy img
+{
+	visibility: hidden;
+	border: 0;
+}
+
+
+/*  ページ構造に関わるものここまで。*/
+
+
+/*
+	p.uei
+	{
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+		text-align: right;
+	}
+*/
+
+
+ul.hochuu
+{
+	margin: 1.2em 0;
+	padding-top: 8px;
+	padding-right: 8px;
+	padding-bottom: 8px;
+	list-style-type: none;
+	font-size: 95%;
+}
+ul.hochuu li
+{
+	position: relative;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+a.kome
+{
+	vertical-align: 0.6em;
+	font-size: 85%;
+}
+ul.hochuu a.kome
+{
+	position: absolute;
+	left: -24px;
+	vertical-align: 0;
+	font-size: medium;
+}
+
+div.kakomi, div.rei, p.rei
+{
+	padding: 0 1.2em;
+}
+div.kakomi, div.rei
+{
+	margin: 1.2em 0;
+	border: 3px solid #bfbfdf;
+}
+p.rei
+{
+	font-style: italic;
+}
+div.kakomi { /*	border-color: #bfdfbf;*/ }
+div.kakomi h3, div.rei h3	/* h4～h6と同じスタイルに。*/
+{
+	font-size: 100%;
+	font-weight: bold;
+	margin: 1.2em 0;
+	padding: 0;
+}
+ul.rei, ul.kakomi
+{
+	border: 3px solid #bfbfdf;
+	padding-top: 1.2em;
+	padding-right: 1.2em;
+	padding-bottom: 1.2em;
+}
+div.kakomi dl, div.kakomi ol, div.kakomi ul,
+div.rei dl, div.rei ol, div.rei ul
+{	/* 元に戻す。*/
+	margin: 1.2em 0;
+}
+
+li p
+{
+/*	margin: 0 0 12px 0;*/
+	margin-top: 0.6em;
+	margin-bottom: 0.6em;
+}
+
+/* table+ul.hochuu */
+ul.tableShita
+{
+	margin-top: -1.8em;
+}
+
+/**************
+**  汎用ID。 **
+**************/
+
+
+/******************
+**  汎用クラス。 **
+******************/
+
+
+.kasen
+{
+	text-decoration: underline;
+}
+
+.cssNashi { display: none; }
+.karappo { display: none; }
+.kizhunHaba { white-space: nowrap; }
+.bunri { margin-top: 0.6em; }
+.saisho { margin-top: 0; }		/* :first-childの代用。*/
+.saigo  { margin-bottom: 0; }	/* :last-childの代用。*/
+

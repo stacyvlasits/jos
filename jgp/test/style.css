@@ -1,0 +1,89 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	background:url(bg.png) repeat-x;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+}
+
+#wrapper {
+	width:700px;
+	background:#FFF;
+	margin:auto;
+}
+
+#header {
+	background:url(croppedbanner.png) no-repeat;
+	height:65px;
+	width:700px;
+	position:relative;
+	margin-bottom:0;
+}
+
+#header-txt {
+	position:absolute;
+	bottom:0px;
+	left: 50%;
+	margin-left:-150px;
+	width:300px;
+	text-align:center;
+	background:#FCC;
+	border-top: 1px solid #666;
+	border-bottom: 1px solid #666;
+	color:#666;
+	font-weight:bold;
+}
+
+#mid {
+	border-right:#000 thick solid;
+	border-left:#000 thick solid;
+	border-bottom: #000 thick solid;
+	margin-top:-20px;
+	padding-top: 25px;
+}
+
+#menu {
+	float:left;	
+	padding: 5px;
+	padding-left:0;
+//	width:300px;
+}
+#menu p {
+	padding-left:5px;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 0;
+	margin-left: 0;
+}
+
+#menu li {
+	background:#83acff url(menulibg.png) right no-repeat;
+	
+	padding: 0 10px 2px 2px;
+	margin-bottom:2px;
+}
+#menu img {
+	padding-top: 2px;	
+}
+
+#menu a {
+	color:#FFF;	
+}
+
+#menu a:hover {
+	color:#FF6;	
+}
+
+#video {
+	padding-left:300px;
+	margin: 10px 10px 40px 10px;
+}
+
+#footer {
+	clear:both;
+	text-align:center;
+	border-top:#000 thin solid;
+	background:#FF9;
+}

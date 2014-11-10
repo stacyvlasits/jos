@@ -1,0 +1,454 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<HTML lang="ja">
+
+<html>
+
+<!-- Copyright 2009 Travis Schiller
+     Created under the direction of Naoko Suito, Ph.D.
+     Spring 2009 -->
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<title>JOSHU - Common Kanji Radicals</title>
+
+<style type="text/css">
+
+#body {
+	padding: 0;
+	margin: -8px; 
+	background-color: #003366;
+	background-image: url(radicalspics/vertical.png);
+	background-repeat: repeat;
+	font: 80% 'lucida sans', 'lucida sans unicode', 'lucida grande', 	'trebuchet ms', helvetica, arial, sans-serif;
+	}
+
+#wrapper {
+	width: 760px;
+	margin: -8px auto;
+	background-color: #ffffff;
+	border: 1px solid #000033;
+	}
+
+a {
+	text-decoration: none;
+	}
+
+a:hover, a:focus, a:active {
+	color: #000000;
+	text-decoration: none
+	}
+
+a:focus, a:active {
+	color: #ffffff;
+	}
+
+ul#jumplinks {
+	display: block;
+	padding: 3px 0;
+	margin: 0;
+	width: 760px;
+	height: 1.4em;
+	background-color: #cc5500;
+	}
+
+ul#jumplinks li {
+	display: inline;
+	float: right;
+	}
+
+ul#jumplinks li a {
+	padding: 0 10px;
+	text-decoration: none;
+	margin: 0 5px;
+	color: #ffffff;
+	}
+
+ul#jumplinks li a:hover, #header h1 a:focus, #header h1 a:active{
+	color: #000000;
+	}
+
+#header {
+	width: 760px;
+	height: 55px;
+	background-color: #000033;
+	border-top: 1px solid #000033;
+	}
+
+#header h1 {
+	padding: 5px;
+	margin: 5px;
+	}
+
+#header h1 a {
+	display: block
+	width: 740 px;
+	height: 110px;
+	padding: 10px;
+	color: #eecc11;
+	font-family: 'trebuchet ms', helvetica, arial, sans-serif;
+	text-decoration: none;
+	}
+
+#header h1 a:hover, #header h1 a:focus, #header h1 a:active {
+	color: #ffffff;
+	background: transparent;
+	text-decoration: none;
+	}
+
+#header h1 a:focus, #header h1 a:active {
+	text-decoration: none;
+	}
+
+#content {
+	float: left;
+	display: inline;
+	width: 480px;
+	margin: 7px 20px;
+	}
+#content a {
+	color: #cc5500;
+	text-decoration: underline;
+	}
+
+#content a:focus, #content a:hover {
+	text-decoration: none;
+	}
+
+p#navbar {
+	font-size: 0.8em;
+	float: right;
+	margin: -3px -25px;
+	}
+
+p#foottitle {
+	color: #000000;
+	font-size: 0.8em;
+	}
+
+h2 {
+	color: #6b0018;
+	text-align: center;
+	padding-top: 5px;
+	}
+
+h3 {
+	color: #6b0018;
+	}
+
+ul {
+	list-style-type: square;
+	padding-left: 40px;
+	margin-left: -5px;
+	}
+
+img.floatLeft {
+	float: left;
+	margin-right: 20px;
+	}
+
+blockquote {
+	margin-left 20px;
+	padding-left: 15px;
+	border-left: 2px dotted #386088;
+	}
+
+blockquote cite {
+	display: block;
+	text-align: right;
+	font-weight: bold;
+	color: #386088;
+	}
+
+#sidebar {
+	float: right;
+	display: inline;
+	color: #ffffff;
+	width: 200px;
+	background-color: #000033;
+	margin: -15px 0 10px 10px; 
+	padding: 10px;
+	}
+
+#sidebar h3 {
+	color: #eecc11;
+	}
+
+#sidebar a {
+	color: #cccccc;
+	}
+
+#sidebar a:hover, #sidebar a:focus, #sidebar a:active {
+	color: #eecc11;
+	}
+
+ul#navmenu {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	}
+
+ul#navmenu li {
+	margin-bottom: 5px;
+	}
+
+ul#navmenu a {
+	display: block;
+	width: 130px;
+	height: auto;
+	margin-left: 6px;
+	background-color: #003366;
+	padding: 5px 5px 3px;
+	text-align: left;
+	text-decoration: none;
+	color: #eecc11;
+	cursor: pointer;
+	}
+
+ul#navmenu a:hover, ul#navmenu a:focus, ul#navmenu a:active, ul#navmenu a.selected, ul#navmenu a.selected:hover, ul#navmenu a.selected:focus, ul#navmenu a.selected:active {
+	background-color: #386088;
+	color: #ffffff;
+	}
+
+ul#navmenu a.selected {
+	text-align: left;
+	cursor: default;
+	}
+
+ul#navmenu a:hover; ul#navmenu a:focus, ul#navmenu a:active {
+	background-color: #333333;
+	color: #ffffff;
+	}
+
+#footer {
+	clear: both;
+	width: 740px;
+	padding: 10px;
+	border-top: 1px solid #000033;
+	background-color: #cc5500;
+	text-align: center;
+	font-size: 0.9m;
+	}
+
+#footer p {
+	margin: -2px; 
+	padding-top: -3px;
+	padding-bottom: 6px;
+	color: #ffffff;
+	}
+
+ul#footnav {
+	margin: 0; 
+	padding: 0; 
+	}
+
+ul#footnav li {
+	display: inline;
+	font-size: 0.7em;
+	}
+
+ul#footnav li a {
+	padding : 0 5px;
+	color : #ffffff;
+	}
+
+#footer a {
+	padding: 0;
+	color: #dddddd;
+	text-decoration: none;
+	}
+
+#footer a:hover, #footer a:focus, #footer a:active {
+	color: #000000;
+	text-decoration: none; 
+	}
+
+ul#footnav li a:hover, ul#footnav li a:focus, ul#footnav li a:active {
+	color: #000000;
+	text-decoration: none;
+	}
+
+
+#copyright{
+	color: #ffffff;
+	text-align: center;
+	font-size: 0.6em;
+	}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="body">
+
+<div id="wrapper">
+
+<ul id="jumplinks">
+<li><a href="https://courses.utexas.edu/webapps/portal/frameset.jsp">Blackboard</a></li>
+<li><a href="https://utdirect.utexas.edu/utdirect/index.WBX">UT Direct</a></li>
+<li><a href="http://www.utexas.edu/">University of Texas</a></li>
+</ul>
+
+<div id="header">
+
+<h1><a href="radicals2.html">Kanji Radicals</a></h1>
+
+</div>   <!--Ends Div Header-->
+
+<div id="content">
+
+<p id="navbar">Introduction &raquo <strong>Common Radicals</strong> &raquo Placement &raquo Usage &raquo Conclusion</p>
+
+<br/>
+
+<img src="radicalspics/joshulogo.gif" class="floatLeft">
+
+<h2>Common Radicals</h2>
+
+<br/>
+
+<p>The term <strong>radical</strong> refers to the building blocks of kanji.  Virtually all Japanese kanji characters are either a single radical or are made up of two or more radicals.  By memorizing kanji as a combination of parts rather than as a unique character, one greatly simplifies the learning process.</p>
+
+<p>Here are some basic radicals seen very frequently in more complex kanji characters.</p>
+
+<h3>True Radicals</h3>
+
+<p>These radicals appear in the same form either as their own kanji or as a component of more complex kanji.</p>
+
+<p><img class="floatLeft" src="radicalspics/day.png">
+<br/>Meaning: Day, Sun
+<br/>Pronunciations: にち　じつ　ひ
+<br/>Examples: 明　早　昨　時　暑 <br/><br/></p>
+
+<p><img class="floatLeft" src="radicalspics/strength.png">
+<br/>Meaning: (Physical) Strength
+<br/> Pronunciations: りょく　りき　ちから
+<br/>Examples: 勉　動 <br/><br/></p>
+
+<p><img class="floatLeft" src="radicalspics/mouth.png">
+<br/>Meaning: Mouth, Enclosure
+<br/>Pronunciations: こう　く　くち
+<br/>Examples: 古　品　員　味<br/><br/></p>
+
+<p><img class="floatLeft" src="radicalspics/child.png">
+<br/>Meaning: Child, Boy
+<br/>Pronunciations: し　す　こ
+<br/>Examples: 学　字　好<br/><br/></p>
+
+<p><img class="floatLeft" src="radicalspics/field.png">
+<br/>Meaning: Field
+<br/>Pronunciations: でん　た
+<br/>Examples: 町　男　画<br/><br/></p>
+
+<p><img class="floatLeft" src="radicalspics/metal.png">
+<br/>Meaning: Metal, Money
+<br/>Pronunciations: きん　こん　かね
+<br/>Examples: 銀　鉄　針<br/><br/></p>
+
+<p><img class="floatLeft" src="radicalspics/word.png">
+<br/>Meaning: Word
+<br/>Pronunciations: げん　ごん　こと　い
+<br/>Examples: 話　語　話　記<br/><br/></p>
+
+<p><img class="floatLeft" src="radicalspics/horse.png">
+<br/>Meaning: Horse
+<br/>Pronunciations: ば　ま　うま
+<br/>Examples: 駅　駐<br/><br/></p>
+
+<h3>Modified Radicals</h3>
+
+<p>The following radicals are a bit trickier.  Just like the true radicals, they can exist by themselves or as components in other kanji.  However, they also have a modified form that exists only as components of other kanji.  The modified form has the same meaning as the original form.</p>
+
+<p><img class="floatLeft" src="radicalspics/person.png">
+<br/>Meaning: Person, Man
+<br/>Pronunciations: にん　じん　ひと
+<br/>Examples: 休　作　使　働<br/><br/></p>
+
+<p><img class="floatLeft" src="radicalspics/water.png">
+<br/>Meaning: Water, Liquid
+<br/>Pronunciations: すい　まず
+<br/>Examples: 海　泣　洋　酒<br/><br/></p>
+
+<p><img class="floatLeft" src="radicalspics/fire.png">
+<br/>Meaning: Fire
+<br/>Pronunciations: か　ひ
+<br/>Examples: 点　炎　災　黒<br/><br/></p>
+
+<p><img class="floatLeft" src="radicalspics/hand.png">
+<br/>Meaning: Hand
+<br/>Pronunciations: しゅ　て
+<br/>Examples: 持　指　招<br/><br/></p>
+
+<p><img class="floatLeft" src="radicalspics/heart.png">
+<br/>Meaning: Heart, Feeling
+<br/>Pronunciations: しん　こころ
+<br/>Examples: 必　愛　忙　性<br/><br/></p>
+
+<p><img class="floatLeft" src="radicalspics/rite.png">
+<br/>Meaning: God, Rite, Enshrine
+<br/>Pronunciations: し　じ　しめ
+<br/>Examples: 祈　票　禁　神　祝<br/><br/></p>
+
+<p>Learning to recognized radicals even in their modified form is one key to understanding the possible meaning of more complex kanji.  Move on to the <a href="radicals3.html">next section</a> to see how these components fit together.</p>
+
+</div>   <!--Ends Div Content-->
+
+<div id="sidebar">
+
+<h3 id="navigation">Jump to Another Section</h3>
+
+<ul id="navmenu">
+<li><a href="radicals1.html">Introduction</a></li>
+<li><a href="radicals2.html">Common Radicals</a></li>
+<li><a href="radicals3.html">Placement</a></li>
+<li><a href="radicals4.html">Usage</a></li>
+<li><a href="radicals5.html">Conclusion</a></li>
+</ul>
+
+<h3>Extra Help</h3>
+
+<p>Much more information on kanji radicals is available from various outside sources.  Please see the Conclusion section for links and tips.</p>
+
+<p>To email a Japanese instructor for questions or comments, click <a href="mailto:n.suito@mail.utexas.edu?subject=Kanji Radicals">here</a>.</p>
+
+</div>   <!--Ends Div Sidebar-->
+
+<div id="footer">
+
+<p id="foottitle">JOSHU Links</p>
+
+<ul id="footnav">
+<li><a href="http://www.laits.utexas.edu/japanese/joshu/index.php">Home</a></li>
+<li><a href="http://www.laits.utexas.edu/japanese/joshu/basics.php">Learn the Basics</a></li>
+<li><a href="http://www.laits.utexas.edu/japanese/joshu/vocabulary.php">Vocabulary</a></li>
+<li><a href="http://www.laits.utexas.edu/japanese/joshu/kanakanji.php">Kana/Kanji</a></li>
+<li><a href="http://www.laits.utexas.edu/japanese/joshu/grammar.php">Grammar</a></li>
+<li><a href="http://www.laits.utexas.edu/japanese/joshu/counters.php">Counters</a></li>
+<li><a href="http://www.laits.utexas.edu/japanese/joshu/reading.php">Reading</a></li>
+<li><a href="http://www.laits.utexas.edu/japanese/joshu/video.php">Video</a></li>
+<li><a href="http://www.laits.utexas.edu/japanese/joshu/culture.php">Culture</a></li>
+<li><a href="http://www.laits.utexas.edu/japanese/joshu/links.php">Links</a></li>
+<ul>
+
+</div>   <!--Ends Div Footer-->
+</div>   <!--Ends Div Wrapper-->
+
+<div id="copyright">
+<br/>
+<p>2009 Travis Schiller and Naoko Suito, Ph.D. &nbsp;All Rights Reserved.</p>
+
+</div>   <!--Ends Div Copyright-->
+&nbsp<br/>
+&nbsp<br/>
+&nbsp<br/>
+&nbsp<br/>
+&nbsp<br/>
+</div>   <!--Ends Div Body-->
+
+
+</body>
+
+</html>

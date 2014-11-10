@@ -1,0 +1,413 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<HTML lang="ja">
+
+<html>
+
+<!-- Copyright 2009 Travis Schiller
+     Created under the direction of Naoko Suito, Ph.D.
+     Spring 2009 -->
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<title>JOSHU - Kanji Radical Tutorial Conclusion</title>
+
+<style type="text/css">
+
+#body {
+	padding: 0;
+	margin: -8px; 
+	background-color: #003366;
+	background-image: url(radicalspics/vertical.png);
+	background-repeat: repeat;
+	font: 80% 'lucida sans', 'lucida sans unicode', 'lucida grande', 	'trebuchet ms', helvetica, arial, sans-serif;
+	}
+
+#wrapper {
+	width: 760px;
+	margin: -8px auto;
+	background-color: #ffffff;
+	border: 1px solid #000033;
+	}
+
+a {
+	text-decoration: none;
+	}
+
+a:hover, a:focus, a:active {
+	color: #000000;
+	text-decoration: none
+	}
+
+a:focus, a:active {
+	color: #ffffff;
+	}
+
+ul#jumplinks {
+	display: block;
+	padding: 3px 0;
+	margin: 0;
+	width: 760px;
+	height: 1.4em;
+	background-color: #cc5500;
+	}
+
+ul#jumplinks li {
+	display: inline;
+	float: right;
+	}
+
+ul#jumplinks li a {
+	padding: 0 10px;
+	text-decoration: none;
+	margin: 0 5px;
+	color: #ffffff;
+	}
+
+ul#jumplinks li a:hover, #header h1 a:focus, #header h1 a:active{
+	color: #000000;
+	}
+
+#header {
+	width: 760px;
+	height: 55px;
+	background-color: #000033;
+	border-top: 1px solid #000033;
+	}
+
+#header h1 {
+	padding: 5px;
+	margin: 5px;
+	}
+
+#header h1 a {
+	display: block
+	width: 740 px;
+	height: 110px;
+	padding: 10px;
+	color: #eecc11;
+	font-family: 'trebuchet ms', helvetica, arial, sans-serif;
+	text-decoration: none;
+	}
+
+#header h1 a:hover, #header h1 a:focus, #header h1 a:active {
+	color: #ffffff;
+	background: transparent;
+	text-decoration: none;
+	}
+
+#header h1 a:focus, #header h1 a:active {
+	text-decoration: none;
+	}
+
+#content {
+	float: left;
+	display: inline;
+	width: 480px;
+	margin: 7px 20px;
+	}
+#content a {
+	color: #cc5500;
+	text-decoration: underline;
+	}
+
+#content a:focus, #content a:hover {
+	text-decoration: none;
+	}
+
+p#navbar {
+	font-size: 0.8em;
+	float: right;
+	margin: -3px -25px;
+	}
+
+p#foottitle {
+	color: #000000;
+	font-size: 0.8em;
+	}
+
+h2 {
+	color: #6b0018;
+	text-align: center;
+	padding-top: 5px;
+	}
+
+h3 {
+	color: #6b0018;
+	}
+
+ul {
+	list-style-type: square;
+	padding-left: 40px;
+	margin-left: -5px;
+	}
+
+img.floatLeft {
+	float: left;
+	margin-right: 20px;
+	}
+
+blockquote {
+	margin-left 20px;
+	padding-left: 15px;
+	border-left: 2px dotted #386088;
+	}
+
+blockquote cite {
+	display: block;
+	text-align: right;
+	font-weight: bold;
+	color: #386088;
+	}
+
+#sidebar {
+	float: right;
+	display: inline;
+	color: #ffffff;
+	width: 200px;
+	background-color: #000033;
+	margin: -15px 0 10px 10px; 
+	padding: 10px;
+	}
+
+#sidebar h3 {
+	color: #eecc11;
+	}
+
+#sidebar a {
+	color: #cccccc;
+	}
+
+#sidebar a:hover, #sidebar a:focus, #sidebar a:active {
+	color: #eecc11;
+	}
+
+ul#navmenu {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	}
+
+ul#navmenu li {
+	margin-bottom: 5px;
+	}
+
+ul#navmenu a {
+	display: block;
+	width: 130px;
+	height: auto;
+	margin-left: 6px;
+	background-color: #003366;
+	padding: 5px 5px 3px;
+	text-align: left;
+	text-decoration: none;
+	color: #eecc11;
+	cursor: pointer;
+	}
+
+ul#navmenu a:hover, ul#navmenu a:focus, ul#navmenu a:active, ul#navmenu a.selected, ul#navmenu a.selected:hover, ul#navmenu a.selected:focus, ul#navmenu a.selected:active {
+	background-color: #386088;
+	color: #ffffff;
+	}
+
+ul#navmenu a.selected {
+	text-align: left;
+	cursor: default;
+	}
+
+ul#navmenu a:hover; ul#navmenu a:focus, ul#navmenu a:active {
+	background-color: #333333;
+	color: #ffffff;
+	}
+
+#footer {
+	clear: both;
+	width: 740px;
+	padding: 10px;
+	border-top: 1px solid #000033;
+	background-color: #cc5500;
+	text-align: center;
+	font-size: 0.9m;
+	}
+
+#footer p {
+	margin: -2px; 
+	padding-top: -3px;
+	padding-bottom: 6px;
+	color: #ffffff;
+	}
+
+ul#footnav {
+	margin: 0; 
+	padding: 0; 
+	}
+
+ul#footnav li {
+	display: inline;
+	font-size: 0.7em;
+	}
+
+ul#footnav li a {
+	padding : 0 5px;
+	color : #ffffff;
+	}
+
+#footer a {
+	padding: 0;
+	color: #dddddd;
+	text-decoration: none;
+	}
+
+#footer a:hover, #footer a:focus, #footer a:active {
+	color: #000000;
+	text-decoration: none; 
+	}
+
+ul#footnav li a:hover, ul#footnav li a:focus, ul#footnav li a:active {
+	color: #000000;
+	text-decoration: none;
+	}
+
+
+#copyright{
+	color: #ffffff;
+	text-align: center;
+	font-size: 0.6em;
+	}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="body">
+
+<div id="wrapper">
+
+<ul id="jumplinks">
+<li><a href="https://courses.utexas.edu/webapps/portal/frameset.jsp">Blackboard</a></li>
+<li><a href="https://utdirect.utexas.edu/utdirect/index.WBX">UT Direct</a></li>
+<li><a href="http://www.utexas.edu/">University of Texas</a></li>
+</ul>
+
+<div id="header">
+
+<h1><a href="radicals5.html">Kanji Radicals</a></h1>
+
+</div>   <!--Ends Div Header-->
+
+<div id="content">
+
+<p id="navbar">Introduction &raquo Common Radicals &raquo Placement &raquo Usage &raquo <strong>Conclusion</strong></p>
+
+<br/>
+
+<img src="radicalspics/joshulogo.gif" class="floatLeft">
+
+<h2>Conclusion & Links</h2>
+
+<br/>
+
+<p>Continue your kanji study on your own now.</p>
+
+<p>Below are links to several resources that can help you learn kanji better and more efficiently.  Most also expand on the kanji radicals introduced here.</p>  
+
+<h3>Print Resources</h3>
+
+<ul>
+<li><a href="http://www.amazon.com/Essential-Kanji-Characters-Systematically-Reference/dp/0834802228">P.G. O'Neill's <em>Essential Kanji</em></a></li>
+<li><a href="http://www.amazon.com/Japanese-Kanji-Flashcards-Vol-Third/dp/0974869449">Japanese Kanji Flashcards</a></li>
+</ul>
+
+<h3>Online Resources</h3>
+
+<ul>
+<li><a href="http://www.yookoso.com/pages/kanji.php?file=yookoso1">Yookoso! Book 1 Kanji Review</a></li>
+<li><a href="http://www.yookoso.com/pages/kanji.php?file=yookoso2">Yookoso! Book 2 Kanji Review</a></li>
+<li><a href="http://asnic.utexas.edu/asnic/suito/syllabi/Names&MeansRadicals.html">Suito-sensei's List of Kanji Radicals</a></li>
+<li><a href="http://tangorin.com/elements">Interactive Kanji Radical Dictionary</a></li>
+<li><a href="http://www.yamasa.cc/ocjs/kanjidic.nsf/GenKanjiLong?OpenForm">Copy/Paste Kanji Dictionary for Large Text Excerpts</a></li>
+<li><a href="similarkanji.html">Similar-Looking Kanji Quiz</a></li>
+</ul>
+
+<h3>Nintendo DS Kanji Software</h3>
+
+<ul>
+<li><a href="http://www.whiterabbitpress.com/catalog/Tadashii-Kanji-Kakitori-kun-Kanji-trainer-for-Nintendo-DS-p-16501.html">Tadashii Kanji Kakitori-kun</a> &nbsp &nbsp &nbsp &nbsp &nbsp <a href="http://www.whiterabbitpress.com/catalog/Tadashii-Kanji-Kakitori-kun-Kanji-trainer-for-Nintendo-DS-p-16501.html"><img src="radicalspics/kakitori.jpeg"></a></li>
+<li><a href="http://www.whiterabbitpress.com/catalog/Kanji-Sonomama-Rakubiki-Jiten-for-Nintendo-DS-p-16625.html">Kanji Sonomama Rakubiki Jiten</a> &nbsp &nbsp <a href="http://www.whiterabbitpress.com/catalog/Kanji-Sonomama-Rakubiki-Jiten-for-Nintendo-DS-p-16625.html"><img src="radicalspics/sonomama.jpeg"></a></li>
+</ul>
+
+<h3>References</h3>
+
+<p>This site was created by Travis Schiller as a project for his 2009 Pre-Graduate School Internship.  It is intended for the free use and reference of students at the University of Texas at Austin.</p>
+
+<p>The following sources were cited for the creation of this site:</p>
+
+<ul>
+<li type="none">Hamasaki, Suzuko. <em>Workbook/Laboratory Manual to Accompany Yookoso! An Invitation to Contemporary Japanese</em>. Third Edition. Boston: McGraw Hill, 2006.</li>
+<li type="none">&nbsp</li>
+<li type="none">Hamasaki, Suzuko. <em>Workbook/Laboratory Manual to Accompany Yookoso! Continuing with Contemporary Japanese</em>. Third Edition. Boston: McGraw Hill, 2006.</li>
+<li type="none">&nbsp</li>
+<li type="none">O'Neill, P.G. <em>Essential Kanji</em>. New York: Weatherhill, 2004.</li>
+</ul>
+</br>
+<p>Special thanks also goes to Naoko Suito, Ph.D., for her assistance and advice in the creation of this project.</p>
+
+</div>   <!--Ends Div Content-->
+
+<div id="sidebar">
+
+<h3 id="navigation">Jump to Another Section</h3>
+
+<ul id="navmenu">
+<li><a href="radicals1.html">Introduction</a></li>
+<li><a href="radicals2.html">Common Radicals</a></li>
+<li><a href="radicals3.html">Placement</a></li>
+<li><a href="radicals4.html">Usage</a></li>
+<li><a href="radicals5.html">Conclusion</a></li>
+</ul>
+
+<h3>Extra Help</h3>
+
+<p>To email a Japanese instructor for questions or comments, click <a href="mailto:n.suito@mail.utexas.edu?subject=Kanji Radicals">here</a>.</p>
+
+</div>   <!--Ends Div Sidebar-->
+
+<div id="footer">
+
+<p id="foottitle">JOSHU Links</p>
+
+<ul id="footnav">
+<li><a href="http://www.laits.utexas.edu/japanese/joshu/index.php">Home</a></li>
+<li><a href="http://www.laits.utexas.edu/japanese/joshu/basics.php">Learn the Basics</a></li>
+<li><a href="http://www.laits.utexas.edu/japanese/joshu/vocabulary.php">Vocabulary</a></li>
+<li><a href="http://www.laits.utexas.edu/japanese/joshu/kanakanji.php">Kana/Kanji</a></li>
+<li><a href="http://www.laits.utexas.edu/japanese/joshu/grammar.php">Grammar</a></li>
+<li><a href="http://www.laits.utexas.edu/japanese/joshu/counters.php">Counters</a></li>
+<li><a href="http://www.laits.utexas.edu/japanese/joshu/reading.php">Reading</a></li>
+<li><a href="http://www.laits.utexas.edu/japanese/joshu/video.php">Video</a></li>
+<li><a href="http://www.laits.utexas.edu/japanese/joshu/culture.php">Culture</a></li>
+<li><a href="http://www.laits.utexas.edu/japanese/joshu/links.php">Links</a></li>
+<ul>
+
+</div>   <!--Ends Div Footer-->
+</div>   <!--Ends Div Wrapper-->
+
+<div id="copyright">
+<br/>
+<p>2009 Travis Schiller and Naoko Suito, Ph.D. &nbsp;All Rights Reserved.</p>
+
+</div>   <!--Ends Div Copyright-->
+&nbsp<br/>
+&nbsp<br/>
+&nbsp<br/>
+&nbsp<br/>
+&nbsp<br/>
+</div>   <!--Ends Div Body-->
+
+
+</body>
+
+</html>

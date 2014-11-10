@@ -1,0 +1,24 @@
+.player-wrapper {
+	display: inline-block;
+	position: relative;
+}
+
+.player-wrapper .play-button {
+	display: inline-block;
+	background: url('../images/play-circle2.svg');
+	/*background-color: white;*/
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	position: absolute;
+	z-index: 10;
+}
+
+.player-wrapper .jwplayer {
+	display: inline-block	;
+}
+
+.player-wrapper .play-button + .jwplayer {
+		opacity: 0 !important;
+}

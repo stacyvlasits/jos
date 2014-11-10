@@ -1,0 +1,137 @@
+	.titleText {
+		background-color: #E8ECF2;
+		font-weight: BOLD;
+		font-size: 24px;
+		border: 2px double black;
+		height: 35px;
+		vertical-align: middle;
+		width: 400px;
+		margin: 0 auto;
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+	
+	.backgroundColor {
+		background-color: #E9F5FE;
+	}
+	
+	.backgroundLayer {
+		background-color: #F0F5FC;
+		border: 1px solid black;
+		width: 98%;
+		height: auto;
+		margin: 0 auto;
+		padding-top: 0px;
+	}
+	
+	.linkline {
+		font-size: 12px;
+		text-align: right;
+		vertical-align: middle;
+		height: 30px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		padding-right: 10px;
+		}
+	
+	.innerTitle {
+		background-color:  #E1E6EB;
+		font-size: 14px;
+		text-align: left;
+		vertical-align: middle;
+		height: 25px;
+		position: relative;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	
+.quizlistLine {
+		font-size: 14px;
+		text-align: right;
+		vertical-align: middle;
+		height: 14px;
+		position: relative;
+		padding-right: 10px;
+		padding-bottom: 5px;
+		
+	}
+	.instructionLine {
+		font-size: 14px;
+		text-align: left;
+		vertical-align: middle;
+		/*height: 35px;*/
+		height: inherit;
+		position: relative;
+		margin-top: 0px;
+		margin-bottom: 40px;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-bottom: 5px;
+		border-bottom: 1px solid black;
+	}
+	
+	.questionLineOdd {
+		padding-left: 30px;
+		text-align: left;
+		background-color: #E1E6EB;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		
+	}
+
+	.questionLineEven {
+		padding-left: 30px;
+		text-align: left;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		
+	}
+	
+	.translationLine {
+		font-size: 12px;
+		padding-left: 20px;
+	}
+	
+	.optionBox {
+		background-color: #E1E6EB;
+		width: 200px;
+		height: auto;
+		text-align: center;
+		vertical-align: bottom;
+		border-top: 1px solid gray;
+		border-right: 1px solid gray;
+		border-left: 1px solid gray;
+		padding: 5px 5px 5px 5px;
+	
+	}
+	
+	.symbols {
+		float: right;
+		padding-right: 10px;
+	}
+
+	.score {
+		margin-bottom: 15px; 
+		font-size: 14px;
+		}
+		
+		a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+		
+		/* CSS Document */

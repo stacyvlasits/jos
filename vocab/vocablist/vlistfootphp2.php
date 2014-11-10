@@ -1,0 +1,1 @@
+	<p align="center"><a href="#top">Return to Top</a> </p><blockquote>  <p align="center"><a href="vocablist.php">‚qeturn to Basic Vocabulary Lists</a></p></blockquote>  </tr></table></BODY></HTML>

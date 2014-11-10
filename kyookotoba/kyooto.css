@@ -1,0 +1,1518 @@
+@import url(./hanyoo.css);
+
+
+/********************
+**  全ページ共通。 **
+********************/
+
+	a
+	{
+		text-decoration: none;
+	}
+	a:link {}
+	a:visited
+	{
+			/*
+			**	Netscape 4	rgb(85, 26, 139) / #551a8b;
+			**	IE			rgb(127, 0, 127) / #7f007f;
+			*/
+
+	/*
+		color: #8f009f;
+	*/
+	}
+	a:hover
+	{
+		background-color: #d7d7d7;
+		color: #5f5f00;
+		text-decoration: none;
+	}
+	a:active {}
+
+	body
+	{
+		color: #000000;
+		background-color: #fcfcfc;
+		font-family: "EPSON 丸ゴシック体Ｍ", "ＭＳ ゴシック", sans-serif;
+	}
+	@media print
+	{
+		body
+		{
+			color: #000000;
+			background-color: #ffffff;
+		}
+		body, table, th, td
+		{
+			font-size: 10pt;
+		}
+	}
+
+
+/*
+**  特定要素用ID。
+*/
+
+	p#tsudzuku
+	{
+		text-align: center;
+		font-weight: bold;
+	}
+	/* yureru**.html や、tsuredzure.html から呼ばれてる。*/
+
+
+/*
+**  特定要素用クラス。
+*/
+
+	p.hochuu
+	{
+		padding: 8px;
+		text-indent: 0;
+	}
+	p.hochuu, ul.hochuu
+	{
+		border: 1px dashed #7f7f00;
+		font-size: 90%;
+		text-indent: 0;
+	}
+
+	table.hosowaku,
+	table.hosowaku th,
+	table.hosowaku td
+	{
+		border-width: 1px;
+	}
+	table.waku
+	{
+		border-width: 2px;
+	}
+	table.waku th,
+	table.waku td
+	{
+		border-width: 1px;
+	}
+
+	tr.bunrisen th,
+	tr.bunrisen td
+	{
+		border-top: 3px double;
+	}
+
+/* アクセント表記用。*/
+
+	img.kakoo, img.zhooshoo
+	{
+		width: 1em;
+		height: 1em;
+	}
+	.sAccent
+	{
+		border: none;
+		line-height: 1.8em;
+	}
+	span.st, span.ss
+	{
+		padding: 1px 3px;
+		border-top: 1px solid black;
+	}
+	span.ss, span.sa
+	{
+		padding: 1px 3px;
+		border-right: 1px solid black;
+	}
+	span.sa, span.sh
+	{
+		padding: 1px 3px;
+		border-bottom: 1px solid black;
+	}
+
+/* 線を重ねてアクセントを表記する方式。
+
+	span.ksAccent
+	{
+		position: relative;
+		font-family: monospace;
+	}
+	span.kAccent
+	{
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
+*/
+
+/* 汎用クラス。*/
+
+	table .tango
+	{
+		border-right: none;
+		padding-right: 3px;
+	}
+	table .accent
+	{
+		border-left: none;
+		padding-left: 3px;
+	}
+
+/* todo, クラス名の再考。*/
+
+	.goAcHeiki .go
+	{
+		border-right: none;
+		white-space: nowrap;
+	}
+	.goAcHeiki .ac
+	{
+		border-left: none;
+		white-space: nowrap;
+	}
+	.goAcHeikiAcSoroe .go
+	{
+		border-right: none;
+		white-space: nowrap;
+		text-align: right;
+	}
+	.goAcHeikiAcSoroe .ac
+	{
+		border-left: none;
+		white-space: nowrap;
+		text-align: right;
+	}
+
+
+/* このクラスは以後、なくすべし。*/
+/*
+**  アクセント記号の見方クラス。
+**  accentKigoonoMikata
+*/
+	.accentKigoonoMikata
+	{
+		border: 1px solid;
+		padding: 2px;
+		background-color: #e7e7ff;
+		text-align: center;
+	}
+	.accentKigoonoMikata .akmDai
+	{
+		padding: 4px;
+		text-align: center;
+	}
+	.accentKigoonoMikata .akmHombun
+	{
+		padding: 4px;
+		background-color: #e7e7e7;
+		border: 1px solid;
+	}
+
+/*
+**  アクセント表記用クラス。
+**  senAccent, SH, SL
+**  ※資料室を中心に呼ばれてる。
+*/
+
+	.senAccent
+	{
+		line-height: 1.33em;
+	}
+	.SH
+	{
+		text-decoration: overline;
+	}
+	.SL
+	{
+		text-decoration: underline;
+	}
+
+
+/* なくすべしここまで。*/
+
+
+/****************************
+**  全ページ共通ここまで。 **
+****************************/
+
+
+/*******************
+**  トップページ。 *
+**  index.html     *
+*******************/
+
+	
+	#topPage h1
+	{
+		font-family: "ＤＨＰ行書体";
+		font-size: xx-large;
+	}
+	#topPage h2, #topPage h3
+	{
+		border-width: 0px 3px 3px 0px;
+		border-style: solid;
+		padding: 2px 6px;
+	}
+
+	#topPage #maegaki
+	{
+		text-align: center;
+	}
+
+	#topPage #mokuzhi div
+	{
+		margin-bottom: 1.6em;
+	}
+	#topPage #hajimeni h2
+	{
+		color: #3f3f00;
+		background-color: #f3ef9f;
+		border-color: #c6cf7f;
+	}
+
+	#topPage #mokuzhi h2
+	{
+		background-color: #e6efff;
+		border-color: #dcd6df;
+	}
+	#topPage #mokuzhi h3
+	{
+		margin-left: -24px;
+		background-color: #efefef;
+		border-color: #dfdfdf;
+	}
+
+	#topPage #chuuigaki
+	{
+		list-style-type: circle;
+		font-size: 80%;
+	}
+	#topPage #chuuigaki ol
+	{
+		padding: 3px 9px 3px 40px;
+		border: 1px dashed #3f3f7f;
+	}
+	#topPage #chuuigaki address
+	{
+		display: inline;
+	}
+	#topPage #chuuigaki strong.outlook
+	{
+		color: #00007f;
+	}
+
+	#topPage #counters
+	{
+		text-align: right;
+	}
+	#topPage #counters img
+	{
+		border-width: 5px;
+		border-style: outset inset inset outset;
+		border-color: #bfbfff;
+		padding: 2px;
+		background-color: #000000;
+	}
+
+/***************************
+**  トップページここまで。**
+***************************/
+
+
+/**********************
+**  履歴ページ専用。 **
+**  rireki/          **
+**********************/
+
+	#rirekiPage li
+	{
+		padding-bottom: 3px;
+	}
+	#rirekiPage li p
+	{
+		margin-bottom: 3px;
+	}
+
+	#rirekiPage #maegaki
+	{
+		text-align: center;
+		font-size: 85%;
+	}
+
+	#rirekiPage div.hi
+	{
+		margin: 1.2em 0px 1.6em 0px;
+		padding: 0px 0px 0px 12px;
+	}
+	#rirekiPage div.hi h2
+	{
+		margin-left: -12px;
+		padding: 3px 9px;
+		border: 1px solid #7f7fbf;
+		background-color: #bfbfff;
+		color: #00003f;
+		font-size: 120%;
+	}
+
+	#rirekiPage div.kakomi
+	{
+		margin: 3px;
+		border: none;
+		border-top: 1px dashed #7f7f7f;
+	}
+
+
+/**************************
+**  履歴ページここまで。 **
+**************************/
+
+
+/********************
+**  リンク集。     **
+**  gokinzho.html  **
+********************/
+
+	#linkPage #mokuzhi h2
+	{
+		background-color: #f7f3eb;
+		border-right: 3px solid #e3d7bf;
+		border-bottom: 3px solid #e3d7bf;
+	}
+	#linkPage div.setsu h2
+	{
+		color: #3f3f00;
+		background-color: #f7edcf;
+		border-right: 3px double #f7dfbf;
+		border-bottom: 3px double #f7dfbf;
+	}
+
+/************************
+**  リンク集ここまで。 **
+************************/
+
+
+/************************
+**  基礎知識専用。     **
+**  kisochishiki.html  **
+************************/
+
+	#kisoPage h2, #kisoPage .koo h3
+	{
+		border-left: 1.2em solid #afbf8f;
+		border-bottom: 1px solid #afbf8f;
+	}
+	#kisoPage dt
+	{
+		background-color: #e7efcf;
+		background-color: #edf3e3;
+		border-right: 1px solid #5f7f3f;
+		border-bottom: #5f7f3f;
+	}
+	#kisoPage #taihiHyoo td
+	{
+		text-align: center;
+	}
+
+/****************************
+**  基礎知識専用ここまで。 **
+****************************/
+
+
+/**************************
+**  文法編・音韻編共通。 **
+**  bumpoo/              **
+**  accent/              **
+**************************/
+
+	#tsuredzurePage #mokuzhi h2,
+	#bumpooPage #mokuzhi h2,
+	#henkaPage #mokuzhi h2,
+	#kokoPage #mokuzhi h2,
+	#onAcPage #mokuzhi h2
+	{
+		background-color: #ebf3ff;
+		border-bottom: 4px double #bfdfff;
+		border-right: 4px double #bfdfff;
+		padding: 2px;
+		padding-left: 0.25em;
+	}
+	#bumpooPage div.setsu h2,
+	#henkaPage div.setsu h2,
+	#kokoPage div.setsu h2,
+	#onAcPage div.setsu h2
+	{
+		margin-top: 1.5em;
+		border-left: 1em solid blue;
+		border-bottom: 1px solid blue;
+		padding-left: 0.5em;
+	}
+	#bumpooPage div.koo h3,
+	#henkaPage div.koo h3,
+	#kokoPage div.koo h3,
+	#onAcPage div.koo h3,
+	#onAcPage .rui3 h3,
+	#onAcPage .rui2 h3,
+	#onAcPage .rui1 h3,
+	#onAcPage .rui0 h3
+	{
+		margin-top: 2em;
+		border-left: 1em solid blue;
+		border-bottom: 1px solid blue;
+		padding-left: 0.5em;
+	}
+/********************************
+** 文法編・音韻編共通ここまで。**
+*********************************/
+
+
+/******************
+**  文法編専用。 **
+**  bumpoo/      **
+******************/
+
+/*
+**  助詞の章。
+**  bumpoo/zhoshi.html
+*/
+	#bumpooPage #shuuZhoshi span.zhoshi
+	{
+		font-weight: bold;
+	}
+	#bumpooPage #shuuZhoshi span.setsuzoku
+	{
+		font-size: 85%;
+	}
+	#bumpooPage #shuuZhoshi dt
+	{
+		padding: 0.3em 0.6em;
+		font-weight: normal;
+		background-color: #ebedef;
+		border: 1px solid #7f7f7f
+	}
+	#bumpooPage #shuuZhoshi p.rei
+	{
+	/*
+		margin-top: 0.6em;
+		margin-bottom: 0.6em;
+		border: none;
+		font-size: 95%;
+	*/
+		font-style: italic;
+	}
+	#bumpooPage #zhoshiSetsuzokuHyoo td
+	{
+		text-align: center;
+	}
+
+/*
+**  動詞の章。
+**  bumpoo/dooshi.html
+*/
+	#bumpooPage .yoogenKatsuyoo td.chigai
+	{
+		color: #0000ff;
+		font-weight: bold;
+	}
+
+/**************************
+**  文法編専用ここまで。 **
+**************************/
+
+
+/******************************
+**  音韻・アクセント編専用。 **
+**  accent/                  **
+******************************/
+
+/*  汎用。 */
+
+	#onAcPage table.keihanshikiTaikeihyoo th
+	{
+	/*
+		background-color: #e7d7c7;
+	*/
+		background-color: #efe7cf;
+		padding: 8px;
+	}
+	#onAcPage table.keihanshikiTaikeihyoo td
+	{
+	/*
+		background-color: #ffefdf;
+	*/
+		background-color: #f7f6f5;
+		padding: 8px;
+		white-space: nowrap;
+	}
+	#onAcPage table.keihanshikiTaikeihyoo .kugiri
+	{
+		background-color: transparent;	/* bumpu.html から。*/
+	}
+	#onAcPage table.keihanshikiTaikeihyoo th.tookyoo
+	{
+	/*
+		background-color: #dfdfff;
+	*/
+		background-color: #e1ddef;
+	}
+	#onAcPage table.keihanshikiTaikeihyoo td.tookyoo
+	{
+	/*
+		background-color: #efefff;
+	*/
+		background-color: #efeff7;
+		white-space: nowrap;
+	}
+	#onAcPage table.keihanshikiTaikeihyoo td.gaitooNashi
+	{
+		color: #9f9f9f;
+		text-align: left;
+	}
+	#onAcPage table.keihanshikiTaikeihyoo td.fuka
+	{
+		color: #9f9f9f;
+		text-align: center;
+	}
+
+/*
+**  京阪式分布。
+**  accent/bumpu.html
+*/
+	#onAcPage #bumpuikidzu #ac1
+	{
+		background-color: #0000ff;
+		color: #0000ff;
+		font-size: 12px;
+		padding: 2px;
+	}
+	#onAcPage #bumpuikidzu #ac2
+	{
+		background-color: #00bfff;
+		color: #00bfff;
+		font-size: 12px;
+		padding: 2px;
+	}
+	#onAcPage #bumpuikidzu #ac3
+	{
+		background-color: #00ffff;
+		color: #00ffff;
+		font-size: 12px;
+		padding: 2px;
+	}
+	#onAcPage #bumpuikidzu #ac4
+	{
+		background-color: #bfff00;
+		color: #bfff00;
+		font-size: 12px;
+		padding: 2px;
+	}
+	#onAcPage .keihanshikiHikakuhyoo
+	{
+		margin-left: -1.2em;
+	}
+	#onAcPage .keihanshikiHikakuhyoo caption
+	{
+		padding-top: 1.2em;
+		font-weight: bold;
+		font-size: 120%;
+	}
+	#onAcPage .keihanshikiHikakuhyoo td
+	{
+		text-align: center;
+		white-space: nowrap;
+	}
+
+/*
+**  用言アクセント体系表。
+**  accent/dooshi.html
+**  accent/keiyooshi.html
+*/
+	#onAcPage .acTaikeiHyoo td.go
+	{
+		border-right: none;
+	}
+	#onAcPage .acTaikeiHyoo td.ac
+	{
+		border-left: none;
+		text-align: right;
+	}
+	#onAcPage .acTaikeiHyoo td.acNomi
+	{
+		text-align: right;
+	}
+
+/*
+**  助詞のアクセント一覧表。
+**  accent/zhoshi.html
+*/
+	#onAcPage #zhoshiAcIchiran
+	{
+		border: 3px double #7f7f7f;
+	}
+	#onAcPage #zhoshiAcIchiran em.kasen
+	{
+		font-weight: normal;
+	}
+	#onAcPage #zhoshiAcIchiran th
+	{
+		text-align: left;
+	}
+	#onAcPage #zhoshiAcIchiran th.rui
+	{
+		background-color: #efefef;
+		color: #000000;
+		border-top: 1px solid #7f7f7f;
+		border-bottom: 1px solid #7f7f7f;
+		padding: 0.25em;
+	}
+	#onAcPage #zhoshiAcIchiran tr.saika th,
+	#onAcPage #zhoshiAcIchiran tr.saika td
+	{
+		padding-bottom: 1.2em;
+	}
+
+/*
+**  複合語のアクセント。
+**  accentFG.html
+*/
+	#onAcPage table.fukugoogo
+	{
+		border: 3px double #7f7f7f;
+	}
+	#onAcPage table.fukugoogo th,
+	#onAcPage table.fukugoogo td
+	{
+		border-left: 0px;
+		border-right: 0px;
+	}
+
+/*
+**  3つの問題。
+**  accent/mondai3.html
+*/
+	#onAcPage .mondai3 td.acHonraikei,
+	#onAcPage .mondai3 td.acKondookei
+	{
+		width: 4.5em;
+		white-space: nowrap;
+		text-align: center;
+	}
+
+/*
+**  用言活用表。
+**  accent/hyoo_keiyooshi.html
+**  accent/hyoo_dooshi.html
+**
+**  以下は、要不要未確認につき、要再調査。
+*/
+
+/* 上部・目次の辺り。*/
+
+	#onAcPage #mokuzhi #ruiIchiranHyoo td
+	{
+		text-align: right;
+	}
+	#onAcPage #ruiIchiranHyoo td.gaitooNashi
+	{
+		/* 直上のスタイルによって、gaitooNashi汎用は上書きされている。*/
+		color: #7f7f7f;
+		text-align: center;
+	}
+	#onAcPage #ruiIchiranHyoo td #suru,
+	#onAcPage #ruiIchiranHyoo td #kuru
+	{
+		margin-right: 1em;
+	}
+	#onAcPage #ruiIchiranHyoo td .tsudzuku
+	{
+		text-align: center;
+	}
+
+/* 表について。*/
+	#onAcPage dl.kakkoSetsumei
+	{
+		margin-top: 0.25em;
+		border: 1px solid;
+		padding: 0.25em;
+	}
+	#onAcPage dl.kakkoSetsumei table
+	{
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+	}
+	#onAcPage dl.kakkoSetsumei td
+	{
+		border: 1px solid #3f3f3f;
+		padding: 0.25em;
+	}
+	#onAcPage dl.kakkoSetsumei td.sayuuOnazhi
+	{
+		border: 0px;
+	}
+
+/* 本編。*/
+/* 活用表概説。*/
+	#onAcPage div.gendaiKyooto h4,
+	#onAcPage div.gendaiTookyoo h4
+	{
+	/*
+		background-color: blue;
+		color: white;
+	*/
+		color: #3f3f7f;
+		border-bottom: 1px solid #3f3f7f;
+	}
+	#onAcPage div.gendaiTookyoo
+	{
+		display: none;
+	}
+
+/* 活用表。*/
+	#onAcPage .katsuyooHyoo
+	{
+	/*
+		margin-bottom: 2.4em;
+	*/
+	}
+	#onAcPage .katsuyooHyoo caption
+	{
+		background-color: #7f7f7f;
+		color: #ffffff;
+		font-size: 125%;
+	}
+	#onAcPage .katsuyooHyoo th
+	{
+		background-color: #efefff;
+		color: #000000;
+	}
+	#onAcPage .katsuyooHyoo th.go,
+	#onAcPage .katsuyooHyoo td.go
+	{
+		border-right: none;
+	}
+	#onAcPage .katsuyooHyoo th.ac,
+	#onAcPage .katsuyooHyoo td.ac
+	{
+		border-left: 1px solid #bfbfbf;
+	}
+	#onAcPage .katsuyooHyoo td
+	{
+		white-space: nowrap;
+	}
+	#onAcPage .katsuyooHyoo td.doosa
+	{
+		text-align: center;
+		color: #7f7f7f;
+	}
+	#onAcPage .katsuyooHyoo td.mazhireri
+	{
+		text-align: center;
+	}
+	#onAcPage .katsuyooHyoo td.gendaiKyootoAccent
+	{
+		/* このクラスは、アクセント欄の*印にも使われていることに注意。*/
+		font-size: 85%;
+		white-space: normal;
+	}
+	#onAcPage .katsuyooHyoo td.gendaiKyootoAccent ul.komeHosoku
+	{
+		margin: 0px;
+		padding-left: 2em;
+	}
+	#onAcPage .katsuyooHyoo td table
+	{
+		margin: 0;
+		border: 1px;	/* th,tdは、既に外側のtable.hosowakuの影響で1pxになってる。*/
+	}
+	#onAcPage .katsuyooHyoo .gendaiKyootoAccent
+	{
+	/*
+		color: #7f7fbf;
+	*/
+		color: #5f5fbf;
+	}
+	#onAcPage .katsuyooHyoo span.gendaiKyootoAccent
+	{
+		/* アクセント欄に表示されるほうにだけ適用。*/
+		font-size: 85%;
+		position: absolute;
+		right: 0em;
+	}
+
+	#onAcPage .katsuyooHyoo td .habagime
+	{
+		/* セルの右端に*印が来るようにするための仕掛け。*/
+		position: relative;
+	}
+
+/* 助詞などの付属語。*/
+	#onAcPage .katsuyooHyoo .fuzokugoGo
+	{
+		padding-left: 2px;
+	}
+	#onAcPage .katsuyooHyoo .fuzokugoAc small
+	{
+		display: none;
+	}
+
+/* 書いた～書いたらの欄は、音便による核のずれのため、専用のスタイルが必要。*/
+	#onAcPage .katsuyooHyoo #kaitara
+	{
+	/*
+		width: 11.25em;
+		連用形の欄に「後ろに動詞が続く時」という長い文字列が入ったので、
+		いらんようになった。
+	*/
+		border-bottom: 0px;
+	}
+	#onAcPage .katsuyooHyoo #kaita
+	{
+		border-top: 1px dashed #bfbfbf;
+	}
+	#onAcPage .katsuyooHyoo #kakanandara
+	{
+		border-bottom: 0px;
+	}
+	#onAcPage .katsuyooHyoo #kakananda
+	{
+		border-top: 1px dashed #bfbfbf;
+		border-bottom: 0px;
+	}
+	#onAcPage .katsuyooHyoo #kakaide
+	{
+		border-top: 1px dashed #bfbfbf;
+	}
+	#onAcPage .katsuyooHyoo #kakazu
+	{
+	}
+
+/* 5拍以上の用言・語尾応用表。*/
+	#onAcPage .yonhakuIzhooYoogen td
+	{
+		text-align: right;
+	}
+	#onAcPage .gohakuGobiOoyooHyoo caption
+	{
+		text-align: left;
+	}
+	#onAcPage .gohakuGobiOoyooHyoo td.go
+	{
+		border-right: none;
+	}
+	#onAcPage .gohakuGobiOoyooHyoo td.ac
+	{
+		border-left: none;
+		text-align: right;
+	}
+
+/* 組別アクセント活用表。*/
+	#onAcPage .kumibetsuKatsuyooHyoo caption
+	{
+		background-color: #7f7f7f;
+		color: #ffffff;
+		font-size: 125%;
+	}
+	#onAcPage .kumibetsuKatsuyooHyoo .gokanIppaku
+	{
+		background-color: #f7f1f1;
+	}
+	#onAcPage .kumibetsuKatsuyooHyoo .ese3,
+	#onAcPage .kumibetsuKatsuyooHyoo .gokanNihaku
+	{
+		background-color: #f1f4f7;
+	}
+	#onAcPage .kumibetsuKatsuyooHyoo .gokanNihakuIzhoo
+	{
+		background-color: #efefdf;
+		background-color: #f1efe3;
+	}
+	#onAcPage .kumibetsuKatsuyooHyoo .gokanSampakuIzhoo
+	{
+		background-color: #edf1e9;
+	}
+	#onAcPage .kumibetsuKatsuyooHyoo .gokanSankumi
+	{
+		background-color: #efe9ef;
+	}
+	#onAcPage .kumibetsuKatsuyooHyoo .gokanReigai
+	{
+	/*
+		background-color: #f7f1f7;
+	*/
+		background-color: #e9e9e9;
+	}
+	#onAcPage .kumibetsuKatsuyooHyoo .gokanKoteikumi
+	{
+		background-color: #ede7e1;
+	}
+	#onAcPage .kumibetsuKatsuyooHyoo tr.hakusuuZhoohoo th
+	{
+		font-size: 85%;
+	}
+	#onAcPage .kumibetsuKatsuyooHyoo tr.hakusuuZhoohoo th.ese3
+	{
+		font-size: 100%;
+	}
+	#onAcPage .kumibetsuKatsuyooHyoo th
+	{
+		border-top: 1px solid #808080;
+		border-left: 1px solid #808080;
+		border-right: 1px solid #e0e0e0;
+		border-bottom: 1px solid #e0e0e0;
+
+		background-color: #f5f5f5;
+	}
+	#onAcPage .kumibetsuKatsuyooHyoo td
+	{
+		border-left: none;
+		border-right: none;
+		border-top: 1px solid #808080;
+		border-bottom: 1px solid #e0e0e0;
+	/*
+		border-top: 1px solid #9f9f9f;
+		border-bottom: 1px solid #9f9f9f;
+		padding-left: 4px;
+		padding-right: 4px;
+	*/
+		color: #7f7fad;
+		white-space: nowrap;
+	}
+	#onAcPage .kumibetsuKatsuyooHyoo td.hidarihazhi
+	{
+		border-left: 1px solid #808080;
+	}
+	#onAcPage .kumibetsuKatsuyooHyoo td.migihazhi
+	{
+		border-right: 1px solid #e0e0e0;
+	}
+	#onAcPage .kumibetsuKatsuyooHyoo td.ese3,
+	#onAcPage .kumibetsuKatsuyooHyoo td.fuzokugo
+	{
+		border-left: 1px solid #808080;
+		border-right: 1px solid #e0e0e0;
+	/*
+		border-left: 1px solid #9f9f9f;
+		border-right: 1px solid #9f9f9f;
+	*/
+		padding-left: 4px;
+	}
+	#onAcPage .kumibetsuKatsuyooHyoo td.fuzokugo
+	{
+		font-weight: normal;
+		font-size: 85%;
+		white-space: normal;
+	}
+	#onAcPage .kumibetsuKatsuyooHyoo td .go
+	{
+	}
+	#onAcPage .kumibetsuKatsuyooHyoo td .ac
+	{
+		color: #000000;
+	/*
+		display: none;
+	*/
+	}
+	#onAcPage .kumibetsuKatsuyooHyoo td .acHo
+	{
+		text-align: right;
+		margin-bottom: -0.75em;
+	}
+	#onAcPage .kumibetsuKatsuyooHyoo .acHo
+	{
+		color: #bf7f7f;
+	}
+
+/* 命令形用のスタイル。*/
+	#onAcPage .kumibetsuKatsuyooHyoo tr.meirei .zhoshiTsuki
+	{
+		margin-bottom: 2px;
+		border-bottom: 1px dashed #7f8f7f;
+		padding-bottom: 2px;
+	}
+	#onAcPage .kumibetsuKatsuyooHyoo tr.meirei th.meireikei
+	{
+		border-right: none;
+	}
+	#onAcPage .kumibetsuKatsuyooHyoo tr.meirei th.itsuki
+	{
+		border-left: none;
+		padding-left: 0px;
+		font-weight: normal;
+		font-size: 95%;
+	}
+	#onAcPage .kumibetsuKatsuyooHyoo tr.meirei td
+	{
+		vertical-align: bottom;
+	}
+	#onAcPage .kumibetsuKatsuyooHyoo tr.meirei td#koi,
+	#onAcPage .kumibetsuKatsuyooHyoo tr.meirei td#sei
+	{
+		vertical-align: top;
+	}
+	#onAcPage .kumibetsuKatsuyooHyoo tr.meirei td .go small,
+	#onAcPage .kumibetsuKatsuyooHyoo tr.meirei td .ac small
+	{
+		display: none;
+	}
+
+/* 連用形用のスタイル。*/
+	#onAcPage .kumibetsuKatsuyooHyoo tr.renyoo th,
+	#onAcPage .kumibetsuKatsuyooHyoo tr.renyoo td
+	{
+		border-bottom: none;
+	}
+	#onAcPage .kumibetsuKatsuyooHyoo tr.kari th,
+	#onAcPage .kumibetsuKatsuyooHyoo tr.kari td,
+	#onAcPage .kumibetsuKatsuyooHyoo tr.ombin th,
+	#onAcPage .kumibetsuKatsuyooHyoo tr.ombin td
+	{
+		border-top: 1px dotted #bfbfbf;
+	}
+
+/* 活用表ここまで。*/
+
+/*********************************
+**	音韻・アクセント編ここまで。**
+*********************************/
+
+
+/******************
+**  検証講座。   **
+**  yureru.html  **
+******************/
+
+	#kenshooPage h1
+	{
+		font-size: 175%;
+	}
+	#kenshooPage #mokuzhi h2
+	{
+		border: 1px solid #7f7f7f;
+		background-color: #bfbfbf;
+		color: #ffffff;
+		padding: 0.1em 0.25em;
+	}
+	#kenshooPage div.setsu
+	{
+		margin-bottom: 1.2em;	/* 汎用の上書き。*/
+		border: 3px double #7f7f7f;
+	}
+	#kenshooPage div.midashi
+	{
+		margin: 0;
+		margin-left: -24px;
+		border-bottom: 3px double #7f7f7f;
+		padding: 1.2em 0.6em;
+			/* midashiの色づけのためにh2のmargin-topを消した代償。*/
+		background-color: #f7f7e7;
+	}
+	#kenshooPage div.midashi h2
+	{
+		margin-top: 0;	/* midashiの色づけのため。*/
+		font-size: 125%;
+		padding-left: 24px;
+	}
+	#kenshooPage div.midashi table,
+	#kenshooPage div.midashi th,
+	#kenshooPage div.midashi td
+	{
+		border: none;
+		margin-bottom: 0;	/* midashiのpadding-bottomと二重になるのを防ぐため。*/
+	}
+	#kenshooPage div.yodan
+	{
+		border-top: 1px dotted #7f7f7f;
+		font-size: 85%;
+	}
+/************************
+**  検証講座ここまで。 **
+************************/
+
+
+/************************
+**  語彙集・逆語彙集。 **
+**  goishuu/           **
+**  aisatsu.html       **
+************************/
+
+	#goiPage sup
+	{
+		vertical-align: 0.33em;
+		font-size: 0.75em;
+	}
+	#goiPage #mokuzhi
+	{
+		text-align: center;
+	}
+	#goiPage #mokuzhi ul
+	{
+		list-style-type: none;
+	}
+	#goiPage #mokuzhi ul li
+	{
+		list-style-type: none;
+		display: inline;
+		margin: 0 0.6em;
+		font-weight: bold;
+	}
+	#goiPage #mokuzhi h3
+	{
+		font-weight: normal;
+		font-size: 85%;
+	}
+
+	#goiPage div.setsu h2
+	{
+		/* aisatsu用。別にこの色にこだわりはないんで、汎用のsetsu>h2にしても良し。*/
+		padding: 0.25em;
+		border: 1px solid #3f5f1f;
+		background-color: #7fbf3f;
+		color: #ffffff;
+	}
+
+	#goiPage #zhisho h2
+	{
+		padding: 0.2em 0.25em;
+		border: 1px solid #3f5f1f;
+		background-color: #7fbf3f;
+		color: #ffffff;
+	}
+	#goiPage #zhisho dl
+	{
+		margin-left: 1.2em;
+	}
+	#goiPage #zhisho dt
+	{
+		font-weight: normal;
+		padding: 0.25em 0.6em;
+		border: 2px solid #7fbf3f;
+	/*
+		border: 2px dashed #7fbf3f;
+	*/
+		background-color: #f3f7f1;
+	}
+	#goiPage #zhisho dt.sakerubeshi
+	{
+		/* #zhishoを消すと、優先順位が下がるさかい消したらあかん。*/
+		border: 2px solid #afafaf;
+		background-color: #dfdfdf;
+	}
+	#goiPage p.reibun
+	{
+		margin-left: 1.2em;
+		margin-right: 1.2em;
+		font-style: italic;
+	}
+	#goiPage p.sanshoo
+	{
+		font-style: italic;
+	}
+	#goiPage span.acHo
+	{
+		margin-left: 1.2em;
+		font-size: 0.85em;
+	}
+	#goiPage #shazhi
+	{
+		margin: 1.2em 0 1.2em 1.2em;
+		border: 2px dashed #0000bf;
+		font-size: 85%;
+	}
+
+	#goiPage dl#teragokoRei
+	{
+		margin: 1.2em 1.2em 1.2em 0;
+		border: 4px double #7fbf3f;
+	}
+	#goiPage dl#teragokoRei dt
+	{
+		border: 0px;
+		padding: 0.5em;
+		background-color: #7fbf3f;
+		color: #ffffff;
+	}
+
+/********************************
+**  語彙集・逆語彙集ここまで。 **
+********************************/
+
+
+/**********************************
+**  雑記。                       **
+**  tsuredzure.html つれづれ帳。 **
+**  susume.html     ススメ。     **
+**********************************/
+
+	#zakkiPage div.setsu h2
+	{
+		border: 1px solid #4f6f8f;
+		background-color: #e3ebf1;
+		color: #4f6f8f;
+		padding: 0.2em 0.1em;
+		font-size: 120%;
+	}
+	#zakkiPage div#nazeKihanteki h3
+	{
+		font-size: 110%;
+		font-style: italic;
+		margin-top: 0px;
+		margin-bottom: 0.6em;
+	}
+	#zakkiPage div#nazeKihanteki ol
+	{
+		margin-top: 0px;
+	}
+	#zakkiPage div#nazeKihanteki ol li
+	{
+		margin-bottom: 0.6em;
+	}
+	#zakkiPage p#tsudzuku
+	{
+		text-align: center;
+	}
+/********************
+**  雑記ここまで。 **
+********************/
+
+
+/*********************
+**  参考書。        **
+**  sankoosho.html  **
+*********************/
+	#honPage dt
+	{
+		background-color: #f3e3d3;
+		padding-left: 0.6em;
+		border: 1px solid #e7d7c7;
+	}
+	#honPage #fuHoogenZhitenRei
+	{
+		border: 3px double black;
+		padding: 0.6em;
+	}
+	#honPage #fuHoogenZhitenRei h4
+	{
+		margin-top: 0px;
+		font-size: 105%;
+	}
+	#honPage #fuHoogenZhitenRei span.midashigo
+	{
+		font-weight: bold;
+	}
+/**********************
+**  参考書ここまで。 **
+**********************/
+
+
+/********************
+**  違いのページ。 **
+**  keihan.html    **
+**  kyookei.html   **
+********************/
+
+	#chigaiPage em
+	{
+		font-style: normal;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	#chigaiPage th
+	{
+		background-color: #efedeb;
+		color: #7f3f3f;
+	}
+	#chigaiPage td
+	{
+		text-align: center;
+		vertical-align: top;
+		white-space: nowrap;
+	}
+
+/****************************
+**  違いのページここまで。 **
+****************************/
+
+
+/*****************
+**  資料室。    **
+**  ./shiryoo/  **
+*****************/
+
+/*
+**  分類概説。
+**  shiryoo/bunrui/gaisetsu.html
+*/
+
+/*
+**  アクセント変遷表。
+**  rekiK.html
+**  rekiD.html
+*/
+	#onAcPage table.hensenhyoo
+	{
+		border: 3px double #7f817f;
+	}
+	#onAcPage .hensenhyoo th
+	{
+		background-color: #eff1ef;
+	}
+	#onAcPage .hensenhyoo th,
+	#onAcPage .hensenhyoo td
+	{
+		border: 1px solid #9fa19f;
+	}
+	#onAcPage .hensenhyoo td.go
+	{
+		border-left: 0px;
+	}
+	#onAcPage .hensenhyoo td.ac
+	{
+		border-right: 0px;
+	}
+	#onAcPage #hensenIchiranHyoo th.kihan,
+	#onAcPage #hensenIchiranHyoo td.kihan
+	{
+		background-color: #f7eff7;
+	}
+
+/*
+**  アクセント一覧表。
+**  ichiran.html
+*/
+	#onAcPage table.taigenAcIchiran
+	{
+		border: 1px solid #878787;
+	}
+	#onAcPage table.taigenAcIchiran th
+	{
+		background-color: #efefef;
+		border: 1px solid #7f7f7f;
+	}
+	#onAcPage table.taigenAcIchiran td
+	{
+		border: 1px solid #7f7f7f;
+	}
+	#onAcPage dl.taigenAcIchiran
+	{
+		margin-top: 0px;
+		margin-bottom: 0.25em;
+	/*
+		border: 3px double #878787;
+	*/
+	}
+	#onAcPage dl.taigenAcIchiran dt
+	{
+		margin-top: 0px;
+	/*
+		border: 3px double #7f7f7f;
+	*/
+		border: 1px solid #7f7f7f;
+		background-color: #efefef;
+		padding: 0.25em;
+		font-size: 105%;
+		font-weight: bold;
+	}
+
+/*
+**  分類表。
+**  shiryoo/bunrui/
+*/
+	#onAcPage div#HHLnosoko
+	{		/* meishi3_2-3.htmlだけ。*/
+		margin-top: 1.2em;
+		border: 1px dashed #7f7f7f;
+		padding: 0.6em;
+	}
+	#onAcPage div#HHLnosoko p
+	{
+		margin-top: 0em;
+		margin-bottom: 0.6em;
+	}
+	#onAcPage div#HHLnosoko dl
+	{
+		border: none;
+	}
+	#onAcPage div#HHLnosoko dl dt
+	{
+		background-color: #efefef;
+		padding: 0.25em;
+		font-weight: bold;
+	}
+	#onAcPage dl.acBunrui
+	{
+		border: 1px solid black;
+		padding: 0.3em 0.6em;
+		line-height: 1.33em;
+	}
+
+/**********************
+**  資料室ここまで。 **
+**********************/
+
+
+/******************
+**  衣延辨。     **
+**  eyeben.html  **
+******************/
+
+/*
+**  floatの後始末用クラス。
+**  floatChokugo, floatOwari
+*/
+	#eyebenPage .floatChokugo
+	{
+		margin-top: 3.5em;
+	}
+	#eyebenPage .floatOwari
+	{
+		clear: both;
+	}
+
+	#eyebenPage .gozhuuondzu
+	{
+		float: right;
+		margin-left: 1.2em;
+	}
+
+	#eyebenPage .moshimonoGozhuuondzu
+	{
+		float: left;
+		margin-right: 1.2em;
+	}
+
+	#eyebenPage .gozhuuondzu td,
+	#eyebenPage .moshimonoGozhuuondzu td
+	{
+		width: 1.2em;
+		padding: 4px;
+		text-align: center;
+	}
+
+	#eyebenPage td.taihi
+	{
+		background-color: #e7efff;
+	}
+
+/**********************
+**  衣延辨ここまで。 **
+**********************/
+
+
+/** debug. **
+	#rirekiPage li p
+	{
+		background: red;
+	}
+
+	#rirekiPage li p:first-child
+	{
+		background: #ff00ff;
+	}
+/** debug. **/
+
+
+/****************
+**  期間限定。 **
+****************/
+/*
+	#topPage #oshirase
+	{
+		color: #df0000;
+	}
+*/
