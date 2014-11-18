@@ -1,5 +1,5 @@
 <?php
-require('joshuphp.php')
+require('header.php')
 ?>
 							<!-- pink SUBTITLE bar -->
 							<TR>
@@ -63,7 +63,7 @@ require('joshuphp.php')
 	  
 	   <table width="759" border="0">
   <tr>
-    <td width="100"><a href= "../index.php" target="_blank"> <img src="../images/50logo.png" width = "98" heighr = "98"></a></td>
+    <td width="100"><a href= "../index.php" target="_blank"> <img src="images/50logo.png" width = "98" heighr = "98"></a></td>
     <td width="659"><a href="../index.php" target="_blank"> <strong>UT Austin Japanese Program</strong></a>,&nbsp;&nbsp;&nbsp;<br>
       Please direct any comments/suggestions to 水藤直子 (Naoko Suito) at ”n.suitoアットaustin.utexas.edu" (replace "アット" with "@")
          </td>
