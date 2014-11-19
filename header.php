@@ -3,6 +3,7 @@
   <head>
   	<link rel="stylesheet" href="header-style.css">
   	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300' rel='stylesheet' type='text/css'>  
   </head>
   <body>
   	<div id="menu">
@@ -43,5 +44,3 @@
   	 <div id="joshu-description">
   	 	<p id="joshu-stands-for">Japanese Online Self-Help Utility</p>
   	 </div>
-  </body>
-</html>
