@@ -41,6 +41,10 @@
   	  	  </li>
   	  	</ul>
   	 </div>
-  	 <div id="joshu-description">
-  	 	<p id="joshu-stands-for">Japanese Online Self-Help Utility</p>
-  	 </div>
+
+     <div id="main-text">
+      <div id="body-paragraph">
+        <p id="logo">
+        <span class="bold green">J</span>APANESE <span class="bold green">O</span>NLINE <span class="bold green">S</span>ELF <span class="bold green">H</span>ELP <span class="bold green">U</span>TILITY
+        </p>
+      </div>
