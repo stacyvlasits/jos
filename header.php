@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-  	<link rel="stylesheet" href="header-style.css">
-  	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300' rel='stylesheet' type='text/css'>  
-  </head>
+    <link rel="stylesheet" href="header-style.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>  </head>
   <body>
     <div id="menu">
   	  <nav class="nav">
@@ -42,10 +41,3 @@
         </ul>
       </nav>
     </div>
-
-    <div id="main-text">
-      <div id="body-paragraph">
-        <p id="logo">
-        <span class="bold green">J</span>APANESE <span class="bold green">O</span>NLINE <span class="bold green">S</span>ELF <span class="bold green">H</span>ELP <span class="bold green">U</span>TILITY
-        </p>
-      </div>
