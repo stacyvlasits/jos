@@ -5,13 +5,13 @@ include('header.php');
     <div id="main-text">
 
       <div id="body-paragraph">
-        <p id="logo">
-        <span class="bold green">J</span>APANESE <span class="bold green">O</span>NLINE <span class="bold green">S</span>ELF <span class="bold green">H</span>ELP <span class="bold green">U</span>TILITY
+        <p id="main-header" class="header first-letter">
+          JAPANESE ONLINE SELF HELP UTILITY
         </p>
       </div>
 
       <div class="body-paragraph">
-        <p class="body-text" id="pg-1">
+        <p class="body-text" id="first-paragraph">
          「助手 (じょしゅ)」 へようこそ!   Welcome to JOSHU, a site for learning the Japanese language!<br>
           In Japanese, joshu means assistant or tutor, which is what this website attempts to be for <br>anyone interested
           in learning the Japanese language.
@@ -19,20 +19,20 @@ include('header.php');
       </div> 
 
       <div>
-        <p class="subheader">
-          SET-UP &amp; TO-DO
+        <p class="header">
+          BEFORE YOU START
         </p>
       </div>
 
       <div class="body-paragraph">
         <p class="body-text">
-          <a href="japanizing/jpn-ur_comp.html">Japanizing Your Computer</a>: How to set up your internet browsers, e-mail programs, fonts, etc. to read and output Japanese.<br>
+          <a href="japanizing/jpn-ur_comp.html">Japanizing Your Computer</a>: Learn how to effectively use Japanese on your computer (Mac and PC), <br>to output Japanese, to add furigana, and to search for Kanji and Katakana words online<br>
           <a href="japanizing/howto_typing_jpn.php">How to type in Japanese(365)</a>: Instructions and practice quiz
         </p>
       </div>
 
       <div>
-        <p class="subheader">
+        <p class="header">
           CONTACT
         </p>
       </div>
