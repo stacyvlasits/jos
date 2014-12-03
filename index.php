@@ -1,7 +1,6 @@
 <?php
 include('header.php');
 ?>
-    <div id="filler"></div>
     <div id="main-text">
 
       <div id="body-paragraph">

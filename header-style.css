@@ -48,3 +48,7 @@ body {
   margin: 0;
   background-color: #e9d2a0;
 }
+
+#filler {
+  height: 4.55em;
+}

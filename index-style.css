@@ -52,10 +52,6 @@
   font-weight: bold;
 }
 
-#filler {
-	height: 4.55em;
-}
-
 #joshu-logo {
   z-index: 2;
   position: fixed;
