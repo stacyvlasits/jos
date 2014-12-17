@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="header-style.css">
-    <link rel="stylesheet" href="index-style.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="script.js"></script>
   </head>
   <body>
     <div id="menu">
       <img id="joshu-logo" src="images/joshu-logo.png">
-  	  <nav class="nav">
-  	    <ul id="nav-list">
+  	  <nav >
+  	    <ul>
   	  	  <li>
   	  	    <a href="index.php">HOME</a>
           </li>

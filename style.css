@@ -1,0 +1,105 @@
+body {
+  background-color: #e9d2a0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  margin: 0;
+  text-align: center;
+}
+
+header h1 {
+  background-color: #63714d;
+  color: #fcdfe5;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 6em;
+  font-weight: normal;
+  margin: 0em;
+}
+
+h1 .first-letter {
+  color: #ffb5c6;
+  font-weight: bold;
+}
+
+h2 {
+  background-color: #e9d2a0;
+  color: #63714d;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+  margin: 0;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+a:link {
+  text-decoration: none;
+  color: #63714d;
+} 
+
+a:visited {
+  text-decoration: none;
+  color: #63714d;
+}
+
+a:active {
+  text-decoration: none;
+  color: #63714d;
+}
+
+nav ul {
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin: 0;
+  padding: 1.2em 0em 1.2em 0em;
+  font-size: 1.2em;
+  background-color: #ffb5c6;
+  position: fixed;
+  text-align: right;
+  width: 100%;
+  z-index: 1;
+}
+
+nav li {
+  display: inline;
+  padding: 1.2em 1em 1.2em;
+}
+
+nav li:hover {
+  background-color: #e2e9d4;
+}
+
+nav li a:hover {
+  text-decoration: none;
+  background-color: #e2e9d4;
+  color: #63714d;
+} 
+
+ul {
+  list-style-type: none;
+}
+
+div {
+  background-color: #f6e5c0;
+}
+
+p {
+  font-size: 1.2em;
+  margin: 0em auto;
+  padding: 1em 0em 1em 0em;
+  max-width: 960px;
+}
+
+#filler {
+  height: 4.55em;
+}
+
+#joshu-logo {
+  z-index: 2;
+  position: fixed;
+  margin-left: 1.5em;
+  margin-top: .3em;
+}
+
+#japanese-logo {
+  float: left;
+  margin-top: .7em;
+}
